@@ -1,8 +1,6 @@
-bash_it_version = "master"
-
 git "#{Chef::Config[:file_cache_path]}/bash_it" do
   repository node['bash_it']['repository']
-  revision bash_it_version
+  revision node['bash_it']['revision']
   destination "#{Chef::Config[:file_cache_path]}/bash_it"
   action :sync
 end
