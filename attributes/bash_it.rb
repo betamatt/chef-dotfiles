@@ -5,7 +5,7 @@ node.default['bash_it'] ={
     'plugins'    => %w[base]
   },
   'custom_plugins' => {
-      "dotfiles" => []
+      "dotfiles" => %w[bash_it/custom/exports.bash]
   },
   'theme' => 'sexy',
   'dir' => '/etc/bash_it',
